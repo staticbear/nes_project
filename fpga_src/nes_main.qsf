@@ -1,0 +1,107 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+# Date created = 02:24:19  November 24, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		nes_main_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY nes_main
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:24:19  NOVEMBER 24, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE debug/mmc1.stp
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/reload/sdcard.sv
+set_global_assignment -name SYSTEMVERILOG_FILE vga_mem_control.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/joystick/nes_joystick.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/joystick/joystick_control.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mappers/mmc1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sdram.sv
+set_global_assignment -name QIP_FILE megawizard/ppu_dump/ppu_dump.qip
+set_global_assignment -name SYSTEMVERILOG_FILE ppu/ppu_render.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ppu/ppu_registers.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/apu/dma.sv
+set_global_assignment -name SYSTEMVERILOG_FILE de1_board/audio/sound_manager.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/apu/noise.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/apu/triangle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE de1_board/audio/wm8731.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/apu/square_pulse.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/apu/frame_counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/apu/apu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/6502_core/core.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/6502_core/alu.sv
+set_global_assignment -name QIP_FILE megawizard/syspll/syspll.qip
+set_global_assignment -name SYSTEMVERILOG_FILE nes_main.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/apu/mixer.sv
+set_global_assignment -name QIP_FILE megawizard/ram_4dump/ram_4dump.qip
+set_global_assignment -name SIGNALTAP_FILE debug/addr_view.stp
+set_global_assignment -name QIP_FILE megawizard/fifo_16x16/fifo_16x16.qip
+set_global_assignment -name QIP_FILE megawizard/fifo_16x16_2clk/fifo_16x16_2clk.qip
+set_global_assignment -name QIP_FILE megawizard/syspll_new/syspll_new.qip
+set_global_assignment -name SIP_FILE megawizard/syspll_new/syspll_new.sip
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/cpu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE clock_gen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ppu/ppu.sv
+set_global_assignment -name SIGNALTAP_FILE debug/ppu.stp
+set_global_assignment -name QIP_FILE megawizard/ppu_oam/ppu_oam.qip
+set_global_assignment -name SYSTEMVERILOG_FILE vga.sv
+set_global_assignment -name QIP_FILE megawizard/vga_ram/vga_ram.qip
+set_global_assignment -name SYSTEMVERILOG_FILE sdram_manager.sv
+set_global_assignment -name QIP_FILE megawizard/fifo_8x8/fifo_8x8.qip
+set_global_assignment -name QIP_FILE megawizard/fifo_9x9/fifo_9x9.qip
+set_global_assignment -name SIGNALTAP_FILE debug/sdram.stp
+set_global_assignment -name QIP_FILE megawizard/fifo_36x36/fifo_36x36.qip
+set_global_assignment -name SYSTEMVERILOG_FILE mappers/mappers_control.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/reload/reload_control.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu/reload/dump_loader.sv
+set_global_assignment -name SIGNALTAP_FILE debug/dump_loader.stp
+set_global_assignment -name QIP_FILE megawizard/fifo_sdcard/fifo_sdcard.qip
+set_global_assignment -name SYSTEMVERILOG_FILE mappers/mmc3.sv
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name SYSTEMVERILOG_FILE mappers/aorom.sv
+set_global_assignment -name QIP_FILE megawizard/ppu_ram/ppu_ram.qip
+set_global_assignment -name VERILOG_FILE segm_indicator.v
+set_global_assignment -name SIGNALTAP_FILE debug/mmc1.stp
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
